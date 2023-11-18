@@ -87,8 +87,8 @@ function App() {
             <i className="fa fa-chevron-up"></i>
           </span>
         </Tooltip>
-        <TermsAndConditions/>
-        <Disclaimer/>
+        {/* <TermsAndConditions/>
+        <Disclaimer/> */}
 
       </div>
     </>

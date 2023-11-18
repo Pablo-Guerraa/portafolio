@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "react-slick";
 
-const Testimonials = ({ darkTheme }) => {
+const Testimonials = () => {
   const reviews = [
     {
       name: "Dennis Jacques",
@@ -55,23 +55,21 @@ const Testimonials = ({ darkTheme }) => {
   return (
     <section
       id="testimonial"
-      className={"section " + (darkTheme ? "bg-dark-1" : "")}
+      className="section "
     >
       <div className="container px-lg-5">
         {/* Heading */}
         <div className="position-relative d-flex text-center mb-5">
           <h2
             className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              "text-24  text-uppercase fw-600 w-100 mb-0 "
             }
           >
             Testimonial
           </h2>
           <p
             className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
-              (darkTheme ? "text-white" : "text-dark")
+              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 "
             }
           >
             {" "}
@@ -87,7 +85,7 @@ const Testimonials = ({ darkTheme }) => {
               <div className="item" key={index}>
                 <div
                   className={
-                    " rounded p-5 " + (darkTheme ? "bg-dark" : "bg-light")
+                    " rounded p-5"
                   }
                 >
                   <div className="d-flex align-items-center mt-auto mb-4">
@@ -99,8 +97,7 @@ const Testimonials = ({ darkTheme }) => {
                     <p className="ms-3 mb-0">
                       <strong
                         className={
-                          "d-block fw-600 " +
-                          (darkTheme ? "text-white" : "text-dark")
+                          "d-block fw-600"
                         }
                       >
                         {value.name}
@@ -113,7 +110,7 @@ const Testimonials = ({ darkTheme }) => {
                   </div>
                   <p
                     className={
-                      " fw-500 mb-4 " + (darkTheme ? "text-white" : "text-dark")
+                      " fw-500 mb-4 "
                     }
                   >
                     “{value.desc}”

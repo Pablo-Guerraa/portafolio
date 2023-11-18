@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Tooltip } from "./Tooltip";
 
-const Contact = ({ darkTheme }) => {
+const Contact = () => {
   const form = useRef();
   const [sendingMail, setSendingMail] = useState(false);
 
@@ -30,7 +30,7 @@ const Contact = ({ darkTheme }) => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: darkTheme ? "dark" : "light",
+            theme: "light",
           });
           console.log(result.text);
           setSendingMail(false);
@@ -44,7 +44,7 @@ const Contact = ({ darkTheme }) => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: darkTheme ? "dark" : "light",
+            theme: "light",
           });
           console.log(error.text);
           setSendingMail(false);
@@ -55,7 +55,7 @@ const Contact = ({ darkTheme }) => {
   return (
     <section
       id="contact"
-      className={"section " + (darkTheme ? "bg-dark-2" : "bg-light")}
+      className={"section bg-light"}
     >
       <div className="container px-lg-5">
         {/* Heading */}
@@ -63,15 +63,14 @@ const Contact = ({ darkTheme }) => {
           <h2
             className={
               "text-24  text-uppercase fw-600 w-100 mb-0 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              "text-light opacity-4"
             }
           >
             Contact
           </h2>
           <p
             className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
-              (darkTheme ? "text-white" : "text-dark")
+              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 text-dark"
             }
           >
             {" "}
@@ -85,50 +84,43 @@ const Contact = ({ darkTheme }) => {
           <div className="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
             <h2
               className={
-                "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
+                "mb-3 text-5 text-uppercase "
               }
             >
               Address
             </h2>
-            <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
-              4th Floor, Plot No.22,
+            <p className={"text-3 mb-4 "}>
+              903, 25 Connor Street, Fortitude Valley,
               <br />
-              145 Murphy Canyon Rd.
+              Brisbane
               <br />
-              San Diego CA 2028
+              QLD
             </p>
-            <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
+            <p className={"text-3 mb-1"}>
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-phone" />
               </span>
-              (060) 444 434 444
+              (+61) 0412 741 667
             </p>
-            <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
-              <span className="text-primary text-4 me-2">
-                <i className="fas fa-fax" />
-              </span>
-              (060) 555 545 555
-            </p>
-            <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
+            <p className={"text-3 mb-4 "}>
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-envelope" />
               </span>
-              chat@simone.com
+              pguerrabedoya@gmail.com
             </p>
             <h2
               className={
-                "mb-3 text-5 text-uppercase " + (darkTheme ? "text-white" : "")
+                "mb-3 text-5 text-uppercase "
               }
             >
               Follow Me
             </h2>
             <ul
               className={
-                "social-icons justify-content-center justify-content-md-start " +
-                (darkTheme ? "social-icons-muted" : "")
+                "social-icons justify-content-center justify-content-md-start "
               }
             >
-              <li className="social-icons-dribbble">
+              {/* <li className="social-icons-dribbble">
                 <Tooltip text="Dribbble" placement="top">
                   <a
                     href="http://www.dribbble.com/harnishdesign/"
@@ -138,22 +130,22 @@ const Contact = ({ darkTheme }) => {
                     <i className="fab fa-dribbble" />
                   </a>
                 </Tooltip>
-              </li>
+              </li> */}
               <li className="social-icons-twitter">
-                <Tooltip text="Twitter" placement="top">
+                <Tooltip text="Linkedin" placement="top">
                   <a
-                    href="https://twitter.com/harnishdesign/"
+                    href="https://www.linkedin.com/in/pablo-guerra-bedoya/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-linkedin" />
                   </a>
                 </Tooltip>
               </li>
               <li className="social-icons-facebook">
                 <Tooltip text="Facebook" placement="top">
                   <a
-                    href="http://www.facebook.com/harnishdesign/"
+                    href="https://www.facebook.com/pabloandres.guerrabedoya.3"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -162,20 +154,20 @@ const Contact = ({ darkTheme }) => {
                 </Tooltip>
               </li>
               <li className="social-icons-google">
-                <Tooltip text="Google" placement="top">
+                <Tooltip text="Instagram" placement="top">
                   <a
-                    href="http://www.google.com/"
+                    href="https://www.instagram.com/pablo_guerra_b/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-google" />
+                    <i className="fab fa-instagram" />
                   </a>
                 </Tooltip>
               </li>
               <li className="social-icons-github">
                 <Tooltip text="Github" placement="top">
                   <a
-                    href="http://www.github.com/"
+                    href="https://github.com/Pablo-Guerraa"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -186,17 +178,15 @@ const Contact = ({ darkTheme }) => {
             </ul>
           </div>
           {/* contact form */}
-          <div className="col-md-8 col-xl-9 order-0 order-md-1">
+          <div className="col-md-8 col-xl-8 order-0 order-md-1">
             <h2
               className={
-                "mb-3 text-5 text-uppercase text-center text-md-start " +
-                (darkTheme ? "text-white" : "")
+                "mb-3 text-5 text-uppercase text-center text-md-start "
               }
             >
               Send us a note
             </h2>
             <form
-              className={darkTheme ? "form-dark" : ""}
               id="contact-form"
               action="php/mail.php"
               method="post"

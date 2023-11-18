@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import resumeFile from "../documents/resume.pdf";
 const AboutUs = () => {
+  const [age, setAge] = useState(0)
+
+  const calculateAge = (date) => {
+    const today = new Date();
+    const birthday = new Date(date);
+    let result = today.getFullYear() - birthday.getFullYear();
+    const m = today.getMonth() - birthday.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
+      result--;
+    }
+    setAge(result)
+  }
+
+  useEffect(() => {
+    calculateAge('1997')
+  }, [])
+
   return (
     <section id="about" className="section">
       <div className="container px-lg-5">
@@ -24,19 +41,14 @@ const AboutUs = () => {
           <div className="col-lg-7 col-xl-8 text-center text-lg-start">
             <h2
               className="text-7 fw-600 mb-3">
-              I'm <span className="text-primary">Simone Olivia,</span> a Web
+              I'm <span className="text-primary">Pablo Guerra,</span> a Web
               Developer
             </h2>
             <p>
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+            Hello! I'm a passionate web developer specializing in React.js and Node.js. My focus is on creating engaging and efficient digital experiences. From crafting dynamic user interfaces with React to robust backend development with Node.js, I enjoy translating concepts into code. Always eager to tackle new challenges and stay up-to-date with the latest trends in the world of web development.
             </p>
             <p>
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+            Let's build something great together
             </p>
           </div>
           {/* About me content end */}
@@ -47,18 +59,18 @@ const AboutUs = () => {
                 className="list-style-2"
               >
                 <li>
-                  <span className="fw-600 me-2">Name:</span>Simone Olivia
+                  <span className="fw-600 me-2">Full name:</span>Pablo Andres Guerra Bedoya
                 </li>
                 <li>
                   <span className="fw-600 me-2">Email:</span>
-                  <a href="mailto:chat@simone.com">chat@simone.com</a>
+                  <a href="mailto:pguerrabedoya@gmail.com">pguerrabedoya@gmail.com</a>
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Age:</span>28
+                  <span className="fw-600 me-2">Age:</span>{age}
                 </li>
                 <li className="border-0">
-                  <span className="fw-600 me-2">From:</span>Los Angeles,
-                  California
+                  <span className="fw-600 me-2">From:</span>Medellin,
+                  Colombia
                 </li>
               </ul>
               <a
@@ -71,61 +83,6 @@ const AboutUs = () => {
             </div>
           </div>
           {/* about me personal details end */}
-        </div>
-        {/* projects rewards counting start */}
-        <div
-          className="brands-grid separator-border mt-5"
-        >
-          <div className="row">
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className="text-12  mb-0 text-muted"
-                >
-                  <span>10</span>+
-                </h4>
-                <p className="mb-0 ">
-                  Years Experiance
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className="text-12  mb-0 text-muted"
-                >
-                  <span>250</span>+
-                </h4>
-                <p className="mb-0">
-                  Happy Clients
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className="text-12  mb-0 text-muted"
-                >
-                  <span>650</span>+
-                </h4>
-                <p className="mb-0 " >
-                  Projects Done
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className="text-12  mb-0 text-muted"
-                >
-                  <span>38</span>
-                </h4>
-                <p className="mb-0">
-                  Get Awards
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
         {/* projects rewards counting end */}
       </div>

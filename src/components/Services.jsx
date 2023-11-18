@@ -9,29 +9,19 @@ const Services = () => {
       icon: "fas fa-palette",
     },
     {
-      name: "Web Design",
+      name: "Front end Web developer",
+      desc: "",
+      icon: "fas fa-pencil-ruler",
+    },
+    {
+      name: "Back end Web developer",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
       icon: "fas fa-desktop",
     },
     {
-      name: "UI/UX Design",
+      name: "Design thinking",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-pencil-ruler",
-    },
-    {
-      name: "App Design & Develop",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-paint-brush",
-    },
-    {
-      name: "Business Analysis",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-chart-area",
-    },
-    {
-      name: "SEO Marketing",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-bullhorn",
+      icon: "fas fa-bullhorn",  
     },
   ];
 

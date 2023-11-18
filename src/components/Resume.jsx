@@ -4,42 +4,30 @@ import resumeFile from "../documents/resume.pdf";
 const Resume = () => {
   const educationDetails = [
     {
-      yearRange: "2000 - 2004",
-      title: "Computer Science",
-      place: "International University",
+      yearRange: "September 25 of 2023 - Current",
+      title: "General English",
+      place: "Albright Institute",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
-      yearRange: "2005 - 2008",
-      title: "Bachelor Degree",
-      place: "University of California",
+      yearRange: "February 21 of 2022 - May 20 of 2022",
+      title: "DESARROLLO WEB FRONTEND EN REACTJS",
+      place: "Academia Geek",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "2009 - 2012",
-      title: "Master Degree",
-      place: "Harvard University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
+    }
   ];
 
   const experienceDetails = [
     {
-      yearRange: "2012 - 2013",
-      title: "Jr. UI UX Designer",
-      place: "Themeforest",
+      yearRange: "June 09 of 2022 - March 31 of 2023",
+      title: "Full stack web developer",
+      place: "AISD",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
-      yearRange: "2014 - 2016",
-      title: "Jr. Product Designer",
-      place: "Dribbble",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "2017 - 2019",
-      title: "Product Designer",
-      place: "Adobe",
+      yearRange: "June 01 of 2022 - March 31 of 2023",
+      title: "Front end web developer",
+      place: "POLYGONUS",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
   ];
@@ -47,7 +35,7 @@ const Resume = () => {
   const skills = [
     {
       name: "Web Design",
-      percent: 65,
+      percent: 60,
     },
     {
       name: "HTML/CSS",
@@ -55,20 +43,20 @@ const Resume = () => {
     },
     {
       name: "JavaScript",
-      percent: 80,
+      percent: 90,
     },
     {
       name: "React JS",
+      percent: 80,
+    },
+    {
+      name: "Node js",
       percent: 70,
     },
     {
-      name: "Angular Js",
-      percent: 60,
-    },
-    {
-      name: "Bootstrap",
-      percent: 99,
-    },
+      name: "Data base",
+      percent: 65,
+    }
   ];
 
   return (

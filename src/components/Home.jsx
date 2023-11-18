@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import videobg from "../videos/home.mp4";
 
-const Home = ({ darkTheme, handleNavClick }) => {
+const Home = ({ handleNavClick }) => {
   return (
     <section id="home">
       <div className="hero-wrap">

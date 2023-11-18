@@ -1,10 +1,10 @@
 import React from "react";
 
-const Footer = ({ darkTheme, handleNavClick }) => {
+const Footer = ({ handleNavClick }) => {
   return (
     <footer
       id="footer"
-      className={"section " + (darkTheme ? "footer-dark bg-dark-1" : "")}
+      className={"section "}
     >
       <div className="container px-lg-5">
         <div className="row">
@@ -19,34 +19,10 @@ const Footer = ({ darkTheme, handleNavClick }) => {
                   handleNavClick("home");
                 }}
               >
-                Simone
+                Pablo
               </a>
               . All Rights Reserved.
             </p>
-          </div>
-          <div className="col-lg-6">
-            <ul className="nav nav-separator justify-content-center justify-content-lg-end">
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#terms-policy"
-                  href="#terms-policy"
-                >
-                  Terms &amp; Policy
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#disclaimer"
-                  href="#disclaimer"
-                >
-                  Disclaimer
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
