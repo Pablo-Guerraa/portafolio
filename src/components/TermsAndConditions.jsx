@@ -1,6 +1,6 @@
 import React from "react";
 
-const TermsAndConditions = ({ darkTheme }) => {
+const TermsAndConditions = () => {
   return (
     <div
       id="terms-policy"
@@ -13,17 +13,15 @@ const TermsAndConditions = ({ darkTheme }) => {
         role="document"
       >
         <div
-          className={
-            "modal-content " + (darkTheme ? "bg-dark-2 text-light" : "")
-          }
+          className="modal-content"
         >
           <div className="modal-header">
-            <h5 className={"modal-title " + (darkTheme ? "text-white" : "")}>
+            <h5 className="">
               Terms &amp; Policy
             </h5>
             <button
               type="button"
-              className={"btn-close " + (darkTheme ? "btn-close-white" : "")}
+              className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             />
@@ -37,7 +35,7 @@ const TermsAndConditions = ({ darkTheme }) => {
               centuries, but also the leap into electronic typesetting,
               remaining essentially unchanged.
             </p>
-            <h3 className={"mb-3 mt-4 mt-4 " + (darkTheme ? "text-white" : "")}>
+            <h3 className="mb-3 mt-4 mt-4">
               Terms of Use
             </h3>
             <p>
@@ -45,7 +43,7 @@ const TermsAndConditions = ({ darkTheme }) => {
               electronic typesetting, remaining essentially unchanged. Simply
               dummy text of the printing and typesetting industry.
             </p>
-            <h5 className={"text-4 mt-4 " + (darkTheme ? "text-white" : "")}>
+            <h5 className="text-4 mt-4">
               Part I – Information Simone collects and controls
             </h5>
             <p>
@@ -53,7 +51,7 @@ const TermsAndConditions = ({ darkTheme }) => {
               the 1500s, when an unknown printer took a galley of type and
               scrambled it to make a type specimen book.
             </p>
-            <h5 className={"text-4 mt-4 " + (darkTheme ? "text-white" : "")}>
+            <h5 className="text-4 mt-4 ">
               Part II – Information that Simone processes on your behalf
             </h5>
             <p>
@@ -61,7 +59,7 @@ const TermsAndConditions = ({ darkTheme }) => {
               the 1500s, when an unknown printer took a galley of type and
               scrambled it to make a type specimen book.
             </p>
-            <h5 className={"text-4 mt-4 " + (darkTheme ? "text-white" : "")}>
+            <h5 className="text-4 mt-4">
               Part III – General
             </h5>
             <p>
@@ -71,7 +69,7 @@ const TermsAndConditions = ({ darkTheme }) => {
               1500s, when an unknown printer took a galley of type and scrambled
               it to make a type specimen book.
             </p>
-            <h3 className={"mb-3 mt-4 " + (darkTheme ? "text-white" : "")}>
+            <h3 className="mb-3 mt-4 ">
               Privacy Policy
             </h3>
             <p>

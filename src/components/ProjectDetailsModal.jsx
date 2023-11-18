@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 
 import Slider from "react-slick";
 
-const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
+const ProjectDetailsModal = ({ projectDetails }) => {
   const sliderRef = useRef();
 
   var settings = {
@@ -41,26 +41,24 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
         <div className="modal-dialog modal-xl">
           <div
             className={
-              "modal-content " + (darkTheme ? "bg-dark-2 text-light" : "")
+              "modal-content "
             }
           >
             <div className="modal-body">
               <button
                 type="button"
-                className={"btn-close " + (darkTheme ? "btn-close-white" : "")}
+                className={"btn-close "}
                 data-bs-dismiss="modal"
                 aria-label="Close"
               />
               <div
                 className={
-                  "container ajax-container " +
-                  (darkTheme ? "bg-dark-2 text-light" : "")
+                  "container ajax-container "
                 }
               >
                 <h2
                   className={
-                    "text-6 font-weight-600 text-center mb-4" +
-                    (darkTheme ? " text-white" : "")
+                    "text-6 font-weight-600 text-center mb-4"
                   }
                 >
                   {projectDetails?.title}
@@ -86,8 +84,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                   <div className="col-md-5">
                     <h4
                       className={
-                        "text-4 font-weight-600" +
-                        (darkTheme ? " text-white" : "")
+                        "text-4 font-weight-600"
                       }
                     >
                       Project Info:
@@ -95,22 +92,20 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                     <p>{projectDetails?.projectInfo}</p>
                     <h4
                       className={
-                        "text-4 font-weight-600 mt-4" +
-                        (darkTheme ? " text-white" : "")
+                        "text-4 font-weight-600 mt-4"
                       }
                     >
                       Project Details:
                     </h4>
                     <ul
                       className={
-                        "list-style-2 " + (darkTheme ? "list-style-light" : "")
+                        "list-style-2"
                       }
                     >
                       <li>
                         <span
                           className={
-                            "text-dark font-weight-600 me-2" +
-                            (darkTheme ? " text-white" : "")
+                            "text-dark font-weight-600 me-2" 
                           }
                         >
                           Client:
@@ -120,8 +115,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                       <li>
                         <span
                           className={
-                            "text-dark font-weight-600 me-2" +
-                            (darkTheme ? " text-white" : "")
+                            "text-dark font-weight-600 me-2" 
                           }
                         >
                           Technologies:
@@ -131,8 +125,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                       <li>
                         <span
                           className={
-                            "text-dark font-weight-600 me-2" +
-                            (darkTheme ? " text-white" : "")
+                            "text-dark font-weight-600 me-2"
                           }
                         >
                           Industry:
@@ -142,8 +135,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                       <li>
                         <span
                           className={
-                            "text-dark font-weight-600 me-2" +
-                            (darkTheme ? " text-white" : "")
+                            "text-dark font-weight-600 me-2"
                           }
                         >
                           Date:
@@ -153,8 +145,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                       <li>
                         <span
                           className={
-                            "text-dark font-weight-600 me-2" +
-                            (darkTheme ? " text-white" : "")
+                            "text-dark font-weight-600 me-2"
                           }
                         >
                           URL:
@@ -171,8 +162,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                     <div className="row no-gutters align-items-center">
                       <div
                         className={
-                          "col-auto text-dark font-weight-600" +
-                          (darkTheme ? " text-white" : "")
+                          "col-auto text-dark font-weight-600"
                         }
                       >
                         Share:
@@ -180,8 +170,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                       <div className="col-auto">
                         <ul
                           className={
-                            "social-icons" +
-                            (darkTheme ? " social-icons-muted" : "")
+                            "social-icons"
                           }
                         >
                           <li className="social-icons-facebook">

@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "react-slick";
 
-const Testimonials = ({ classicHeader, darkTheme }) => {
+const Testimonials = ({ darkTheme }) => {
   const reviews = [
     {
       name: "Dennis Jacques",
@@ -57,7 +57,7 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
       id="testimonial"
       className={"section " + (darkTheme ? "bg-dark-1" : "")}
     >
-      <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
+      <div className="container px-lg-5">
         {/* Heading */}
         <div className="position-relative d-flex text-center mb-5">
           <h2

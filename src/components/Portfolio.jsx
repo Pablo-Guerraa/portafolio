@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Isotope from "isotope-layout";
 import ProjectDetailsModal from "./ProjectDetailsModal";
-const Portfolio = ({ classicHeader, darkTheme }) => {
+const Portfolio = () => {
   // init one ref to store the future isotope object
   const isotope = useRef();
   // store the filter keyword in a state
@@ -228,23 +228,21 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     <>
       <section
         id="portfolio"
-        className={"section " + (darkTheme ? "bg-dark-2" : "bg-light")}
+        className={"section bg-light"}
       >
-        <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
+        <div className="container px-lg-5">
           {/* Heading */}
           <div className="position-relative d-flex text-center mb-5">
             <h2
               className={
-                "text-24  text-uppercase fw-600 w-100 mb-0 " +
-                (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+                "text-24  text-uppercase fw-600 w-100 mb-0 text-light opacity-4"
               }
             >
               Portfolio
             </h2>
             <p
               className={
-                "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
-                (darkTheme ? "text-white" : "text-dark")
+                "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 text-dark"
               }
             >
               {" "}
@@ -256,8 +254,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           {/* Filter Menu */}
           <ul
             className={
-              "portfolio-menu nav nav-tabs justify-content-center border-bottom-0 mb-5 " +
-              (darkTheme ? "nav-light" : "")
+              "portfolio-menu nav nav-tabs justify-content-center border-bottom-0 mb-5"
             }
           >
             <li className="nav-item">
@@ -333,7 +330,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         {/* Modal */}
         <ProjectDetailsModal
           projectDetails={selectedProjectDetails}
-          darkTheme={darkTheme}
         ></ProjectDetailsModal>
       </div>
     </>

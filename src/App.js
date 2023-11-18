@@ -9,16 +9,12 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
-import ClassicHeader from "./components/ClassicHeader";
-import { commonConfig } from "./config/commonConfig";
 import TermsAndConditions from "./components/TermsAndConditions";
 import Disclaimer from "./components/Disclaimer";
 import PreLoader from "./components/Preloader";
 import { Tooltip } from "./components/Tooltip";
 
 function App() {
-  const classicHeader = commonConfig.classicHeader;
-  const darkTheme = commonConfig.darkTheme;
 
   const handleNavClick = (section) => {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
@@ -58,51 +54,23 @@ function App() {
     <>
       <div
         style={{ position: "relative" }}
-        className={classicHeader ? "" : "side-header"}
+        className="side-header"
       >
         {isLoading && <PreLoader></PreLoader>}
 
         <div id="main-wrapper">
-          {classicHeader ? (
-            <ClassicHeader handleNavClick={handleNavClick}></ClassicHeader>
-          ) : (
-            <Header handleNavClick={handleNavClick}></Header>
-          )}
+          <Header handleNavClick={handleNavClick}></Header>
 
           <div id="content" role="main">
-            <Home
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-              handleNavClick={handleNavClick}
-            ></Home>
-            <AboutUs
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></AboutUs>
-            <Services
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Services>
-            <Resume
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Resume>
-            <Portfolio
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Portfolio>
-            <Testimonials
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Testimonials>
-            <Contact
-              classicHeader={classicHeader}
-              darkTheme={darkTheme}
-            ></Contact>
+            <Home handleNavClick={handleNavClick}/>
+            <AboutUs/>
+            <Services/>
+            <Resume/>
+            <Portfolio/>
+            <Testimonials/>
+            <Contact/>
           </div>
           <Footer
-            classicHeader={classicHeader}
-            darkTheme={darkTheme}
             handleNavClick={handleNavClick}
           ></Footer>
         </div>
@@ -119,9 +87,9 @@ function App() {
             <i className="fa fa-chevron-up"></i>
           </span>
         </Tooltip>
+        <TermsAndConditions/>
+        <Disclaimer/>
 
-        <TermsAndConditions darkTheme={darkTheme}></TermsAndConditions>
-        <Disclaimer darkTheme={darkTheme}></Disclaimer>
       </div>
     </>
   );

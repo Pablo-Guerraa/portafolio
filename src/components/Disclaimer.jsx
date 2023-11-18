@@ -1,6 +1,6 @@
 import React from "react";
 
-const Disclaimer = ({ darkTheme }) => {
+const Disclaimer = () => {
   return (
     <div
       id="disclaimer"
@@ -13,17 +13,15 @@ const Disclaimer = ({ darkTheme }) => {
         role="document"
       >
         <div
-          className={
-            "modal-content " + (darkTheme ? "bg-dark-2 text-light" : "")
-          }
+          className="modal-content"
         >
           <div className="modal-header">
-            <h5 className={"modal-title " + (darkTheme ? "text-white" : "")}>
+            <h5 className="modal-title">
               Copyright &amp; Disclaimer
             </h5>
             <button
               type="button"
-              className={"btn-close " + (darkTheme ? "btn-close-white" : "")}
+              className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             />
