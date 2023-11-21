@@ -67,20 +67,21 @@ const Portfolio = () => {
     },
     {
       title: "Proceso Seguro",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      projectInfo: "",
       client: "AI&SD",
       technologies: "NodeJS, Express, React, Router, Redux",
-      industry: "Art & Design",
+      industry: "",
       date: "July 16, 2019",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "www.procesoSeguro.com",
+        link: "https://erp-ps-mauricio.web.app/",
       },
-      thumbImage: "images/projects/project-4.jpg",
+      thumbImage: "images/projects/proceso-seguro-1.png",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-4.jpg",
+        "images/projects/proceso-seguro-2.png",
+        "images/projects/proceso-seguro-3.png",
+        "images/projects/proceso-seguro-4.png",
+        "images/projects/proceso-seguro-5.png",
       ],
     }
   ];
