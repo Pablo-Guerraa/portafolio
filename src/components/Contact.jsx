@@ -102,7 +102,7 @@ const Contact = () => {
               </span>
               (+61) 0412 741 667
             </p>
-            <p className={"text-3 mb-4 "}>
+            <p className={"text-1 mb-4 "}>
               <span className="text-primary text-4 me-2">
                 <i className="fas fa-envelope" />
               </span>
