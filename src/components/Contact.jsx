@@ -14,10 +14,10 @@ const Contact = () => {
     setSendingMail(true);
     emailjs
       .sendForm(
-        "service_i86k3ms",
-        "template_si6cin9",
+        "service_o5tlbsm",
+        "template_r5iej96",
         form.current,
-        "c9HsDgGF0tvWyVnAL"
+        "I6RVMKCx6JAehoc3M"
       )
       .then(
         (result) => {
@@ -32,7 +32,6 @@ const Contact = () => {
             progress: undefined,
             theme: "light",
           });
-          console.log(result.text);
           setSendingMail(false);
         },
         (error) => {
@@ -46,7 +45,6 @@ const Contact = () => {
             progress: undefined,
             theme: "light",
           });
-          console.log(error.text);
           setSendingMail(false);
         }
       );
@@ -196,7 +194,7 @@ const Contact = () => {
                     className="form-control"
                     rows={5}
                     required
-                    placeholder="Tell us more about your needs........"
+                    placeholder="Tell us more about your needs . . ."
                     defaultValue={""}
                   />
                 </div>
@@ -212,7 +210,7 @@ const Contact = () => {
                       <span
                         role="status"
                         aria-hidden="true"
-                        class="spinner-border spinner-border-sm align-self-center me-2"
+                        className="spinner-border spinner-border-sm align-self-center me-2"
                       ></span>
                       Sending.....
                     </>
