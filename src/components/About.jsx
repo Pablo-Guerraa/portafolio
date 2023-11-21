@@ -1,22 +1,6 @@
 import React, { useEffect, useState } from "react";
 import resumeFile from "../documents/resume.pdf";
-const AboutUs = () => {
-  const [age, setAge] = useState(0)
-
-  const calculateAge = (date) => {
-    const today = new Date();
-    const birthday = new Date(date);
-    let result = today.getFullYear() - birthday.getFullYear();
-    const m = today.getMonth() - birthday.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
-      result--;
-    }
-    setAge(result)
-  }
-
-  useEffect(() => {
-    calculateAge('1997')
-  }, [])
+const AboutUs = ({age}) => {
 
   return (
     <section id="about" className="section">

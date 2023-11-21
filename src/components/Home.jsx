@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-const Home = ({ handleNavClick }) => {
+const Home = ({ handleNavClick, age }) => {
   return (
     <section id="home">
       <div className="hero-wrap">
@@ -35,7 +35,7 @@ const Home = ({ handleNavClick }) => {
                     options={{
                       strings: [
                         "I'm Pablo Guerra.",
-                        "I'm 25 years old",
+                        "I'm " + age + " years old",
                         "I'm Web developer.",
                         "I'm student English.",
                       ],

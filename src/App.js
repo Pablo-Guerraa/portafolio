@@ -20,15 +20,18 @@ function App() {
 
   const [scrollTopVisible, setScrollTopVisible] = useState(false);
   const [isLoading, setisLoading] = useState(true);
-  useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
-      setisLoading(false);
-    }, 1000);
-    return () => {
-      clearTimeout(loadingTimeout);
-    };
-  }, []);
+  const [age, setAge] = useState(0);
 
+  const calculateAge = (date) => {
+    const today = new Date();
+    const birthday = new Date(date);
+    let result = today.getFullYear() - birthday.getFullYear();
+    const m = today.getMonth() - birthday.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
+      result--;
+    }
+    setAge(result)
+  }
   const checkScrollTop = () => {
     let scrollTopBtn = document.getElementById("back-to-top");
 
@@ -43,6 +46,19 @@ function App() {
       }
     }
   };
+
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setisLoading(false);
+    }, 1000);
+    return () => {
+      clearTimeout(loadingTimeout);
+    };
+  }, []);
+
+  useEffect(() => {
+    calculateAge('1997')
+  }, [])
 
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", checkScrollTop);
@@ -60,8 +76,8 @@ function App() {
           <Header handleNavClick={handleNavClick}></Header>
 
           <div id="content" role="main">
-            <Home handleNavClick={handleNavClick}/>
-            <AboutUs/>
+            <Home handleNavClick={handleNavClick} age={age}/>
+            <AboutUs age={age}/>
             <Services/>
             <Resume/>
             <Portfolio/>
