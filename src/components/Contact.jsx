@@ -10,7 +10,7 @@ const Contact = () => {
   const [sendingMail, setSendingMail] = useState(false);
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     setSendingMail(true);
     emailjs
       .sendForm(
