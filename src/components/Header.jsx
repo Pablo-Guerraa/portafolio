@@ -177,29 +177,7 @@ const Header = ({ homeRef, handleNavClick }) => {
                 </a>
               </Tooltip>
             </li>
-            <li className="social-icons-facebook">
-              <Tooltip text="Facebook" placement="top">
-                <a
-                  href="http://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-facebook-f" />
-                </a>
-              </Tooltip>
-            </li>
-            
-            <li className="social-icons-dribbble">
-              <Tooltip text="Instagram" placement="top">
-                <a
-                  href="https://www.instagram.com/pablo_guerra_b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-instagram" />
-                </a>
-              </Tooltip>
-            </li>
+          
             <li className="social-icons-github">
               <Tooltip text="Github" placement="top">
                 <a

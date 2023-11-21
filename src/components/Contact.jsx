@@ -142,28 +142,6 @@ const Contact = () => {
                   </a>
                 </Tooltip>
               </li>
-              <li className="social-icons-facebook">
-                <Tooltip text="Facebook" placement="top">
-                  <a
-                    href="https://www.facebook.com/pabloandres.guerrabedoya.3"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-google">
-                <Tooltip text="Instagram" placement="top">
-                  <a
-                    href="https://www.instagram.com/pablo_guerra_b/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-instagram" />
-                  </a>
-                </Tooltip>
-              </li>
               <li className="social-icons-github">
                 <Tooltip text="Github" placement="top">
                   <a
