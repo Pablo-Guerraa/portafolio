@@ -7,13 +7,13 @@ const Resume = () => {
       yearRange: "September 25 of 2023 - Current",
       title: "General English",
       place: "Albright Institute",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: "I stand out with a 100% attendance record, showcasing my active participation and attentiveness in class. My commitment to learning creates a positive and dynamic educational atmosphere.",
     },
     {
       yearRange: "February 21 of 2022 - May 20 of 2022",
       title: "DESARROLLO WEB FRONTEND EN REACTJS",
       place: "Academia Geek",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: "I completed a specialized Front-End course where I excelled as one of the top 3 students. My dedication to mastering programming concepts and skills set me apart in this intensive and rewarding learning experience.",
     }
   ];
 
@@ -21,14 +21,14 @@ const Resume = () => {
     {
       yearRange: "June 09 of 2022 - March 31 of 2023",
       title: "Full stack web developer",
-      place: "AISD",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      place: "AI&SD",
+      desc: "I focused on optimizing database connections, significantly improving efficiency in managing connections during requests. My efforts resulted in a more streamlined and responsive system, enhancing overall performance",
     },
     {
       yearRange: "June 01 of 2022 - March 31 of 2023",
       title: "Front end web developer",
       place: "POLYGONUS",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: "I played a key role in optimizing server-side rendering practices in React. By rectifying inefficiencies, I ensured the full realization of client-side rendering benefits, contributing to a more efficient and streamlined development process",
     },
   ];
 
