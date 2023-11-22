@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Isotope from "isotope-layout";
 import ProjectDetailsModal from "./ProjectDetailsModal";
+
 const Portfolio = () => {
   // init one ref to store the future isotope object
   const isotope = useRef();
@@ -98,6 +99,14 @@ const Portfolio = () => {
       isotope.current.destroy();
     };
   }, []);
+
+    // handling filter key change
+    useEffect(() => {
+      if (imagesLoaded) {
+           isotope.current.arrange({ filter: `*` })
+      }
+    }, [imagesLoaded]);
+  
 
   return (
     <>
