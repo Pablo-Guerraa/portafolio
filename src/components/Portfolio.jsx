@@ -12,7 +12,7 @@ const Portfolio = () => {
   const projectsData = [
     {
       title: "Pokedex",
-      projectInfo: "",
+      projectInfo: "This user-friendly interface allows you to effortlessly navigate through the collection, providing you with comprehensive information and links to related resources. But that's not all; I've integrated a stylish night mode so you can enjoy the experience even in the darkness.",
       client: "Educational project",
       technologies: "React js, Redux, React router, Tailwind",
       industry: "Entertainment",
@@ -32,7 +32,7 @@ const Portfolio = () => {
     },
     {
       title: "Simple e-commerce",
-      projectInfo: "",
+      projectInfo: "Discover the simplicity of online shopping with our e-commerce site. Browse, shop, and enjoy, day or night!",
       client: "Educational project", 
       technologies: "Html, Css, Javascrip",
       industry: "Sales",
@@ -51,7 +51,7 @@ const Portfolio = () => {
     },
     {
       title: "Rick and Morty",
-      projectInfo: "",
+      projectInfo: "Enjoy the Rick and Morty characters that appear randomly on the planet",
       client: "Educational project",
       technologies: "ReactJS, Axios, React-dom, Tailwind",
       industry: "Entertainment",
@@ -67,14 +67,14 @@ const Portfolio = () => {
       ],
     },
     {
-      title: "Proceso Seguro",
-      projectInfo: "",
+      title: "Secure Process",
+      projectInfo: "Welcome to our administrative hub, dedicated to simplifying the process of legalizing and ensuring civil safety compliance for businesses. Our streamlined platform offers efficient tools for managing safety certifications, regulatory documentation, and internal assessments. Navigate with ease, empowering your administrative team to handle compliance effortlessly. TO ACCESS THE INTERFACE USE THE FOLLOWING CREDENTIALS user: Admin1@admin.com; password: Admin1234",
       client: "AI&SD",
       technologies: "NodeJS, Express, React, Router, Redux",
-      industry: "",
+      industry: "Safety at Work",
       date: "July 16, 2019",
       url: {
-        name: "www.procesoSeguro.com",
+        name: "www.secureProcess.com",
         link: "https://erp-ps-mauricio.web.app/",
       },
       thumbImage: "images/projects/proceso-seguro-1.png",

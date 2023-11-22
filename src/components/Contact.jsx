@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import { Tooltip } from "./Tooltip";
-
+ 
 const Contact = () => {
   const form = useRef();
   const [sendingMail, setSendingMail] = useState(false);
@@ -160,7 +160,7 @@ const Contact = () => {
                 "mb-3 text-5 text-uppercase text-center text-md-start "
               }
             >
-              Send us a note
+              Send me a note
             </h2>
             <form
               id="contact-form"
@@ -194,7 +194,7 @@ const Contact = () => {
                     className="form-control"
                     rows={5}
                     required
-                    placeholder="Tell us more about your needs . . ."
+                    placeholder="You can leave a note . . ."
                     defaultValue={""}
                   />
                 </div>
