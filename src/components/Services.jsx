@@ -4,23 +4,18 @@ const Services = () => {
   // services details
   const services = [
     {
-      name: "Graphic Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-palette",
-    },
-    {
       name: "Front end Web developer",
-      desc: "",
+      desc: "Focused on delivering visual and technical solutions that enhance the usability and appearance of web projects.",
       icon: "fas fa-pencil-ruler",
     },
     {
       name: "Back end Web developer",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: " Back-End Developer dedicated to crafting efficient and scalable solutions for web applications.",
       icon: "fas fa-desktop",
     },
     {
       name: "Design thinking",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: "Dedicated to leveraging Design Thinking methodologies to solve complex problems and deliver impactful, human-centered designs for a meaningful user experience.",
       icon: "fas fa-bullhorn",  
     },
   ];

@@ -35,7 +35,7 @@ const Resume = () => {
   const skills = [
     {
       name: "Web Design",
-      percent: 60,
+      percent: 85,
     },
     {
       name: "HTML/CSS",

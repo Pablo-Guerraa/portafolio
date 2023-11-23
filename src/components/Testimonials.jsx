@@ -5,31 +5,31 @@ import Slider from "react-slick";
 const Testimonials = () => {
   const reviews = [
     {
-      name: "Dennis Jacques",
-      position: "User from USA",
+      name: "Sheran",
+      position: "English teacher of Albright Institute",
       src: "images/testimonial/client-sm-3.jpg",
-      desc: "Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text of the printing and typesetting industry.",
+      desc: "Dedicated and diligent learner, Pablo has shown commendable progress in both vocabulary and grammar skills. The commitment to improvement is evident. Focus on refining pronunciation and structuring written work will further enhance overall communication. Keep up the impressive effort and dedication to continuous learning!",
       rating: 5,
     },
     {
-      name: "Jay Shah",
-      position: "Founder at Icomatic Pvt Ltd",
-      src: "images/testimonial/client-sm-1.jpg",
-      desc: "Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure.",
+      name: "Sara Estefania B.",
+      position: "ReacJs Teacher of Academy Geek",
+      src: "images/testimonial/sara.jpeg",
+      desc: "Great work, Pablo! Your commitment to learning web development is impressive. I've noticed your analytical skills shining through in problem-solving. Consider optimizing time management and actively participating in group projects for even more growth. Keep it up!",
       rating: 5,
     },
     {
-      name: "Patrick Cary",
-      position: "Freelancer from USA",
-      src: "images/testimonial/client-sm-2.jpg",
-      desc: "I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure.",
+      name: "Fabian Mauricio G.",
+      position: "Brother - Web developer of Imagemaker",
+      src: "images/testimonial/mauricio.jpeg",
+      desc: "Collaborating with my brother, has been fantastic. His technical prowess and creative approach elevate our projects. [Your name] is an excellent collaborator and adapts seamlessly to new challenges.",
       rating: 5,
     },
     {
-      name: "Chris Tom",
-      position: "User from UK",
-      src: "images/testimonial/client-sm-4.jpg",
-      desc: "I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. Excellent.",
+      name: "Andres ",
+      position: "Coworker at Polygon",  
+      src: "images/testimonial/andres.jpeg",
+      desc: "Great collaborator! Pablo brings a strong work ethic and attention to detail to our projects. He communicates effectively and is a reliable team player. Pleasure working together.",
       rating: 5,
     },
   ];
@@ -93,6 +93,7 @@ const Testimonials = () => {
                       className="img-fluid rounded-circle border d-inline-block w-auto"
                       src={value.src}
                       alt=""
+                      style={{maxHeight: '70px'}}
                     />
                     <p className="ms-3 mb-0">
                       <strong
@@ -115,11 +116,6 @@ const Testimonials = () => {
                   >
                     “{value.desc}”
                   </p>
-                  <span className="text-2">
-                    {[...Array(value.rating)].map((value, i) => (
-                      <i className="fas fa-star text-warning" key={i} />
-                    ))}
-                  </span>
                 </div>
               </div>
             ))}

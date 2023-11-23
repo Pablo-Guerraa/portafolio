@@ -194,7 +194,7 @@ const Contact = () => {
                     className="form-control"
                     rows={5}
                     required
-                    placeholder="You can leave a note . . ."
+                    placeholder="You can leave me a note . . ."
                     defaultValue={""}
                   />
                 </div>
