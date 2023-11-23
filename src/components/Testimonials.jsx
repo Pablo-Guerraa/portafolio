@@ -26,7 +26,7 @@ const Testimonials = () => {
       rating: 5,
     },
     {
-      name: "Andres ",
+      name: "Jorge Andres R",
       position: "Coworker at Polygon",  
       src: "images/testimonial/andres.jpeg",
       desc: "Great collaborator! Pablo brings a strong work ethic and attention to detail to our projects. He communicates effectively and is a reliable team player. Pleasure working together.",
