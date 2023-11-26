@@ -179,6 +179,10 @@ const Portfolio = () => {
                 ))}
             </div>
           </div>
+          <div>
+            <b>Note:</b> <p>Here, you'll find a glimpse of projects I've worked on. Please note that certain past projects aren't visible due to privacy restrictions imposed by my previous employers. If you're interested in more details about my work history, I'd be happy to provide additional information!</p>
+          </div>
+
         </div>
       </section>
       <div className="project-details-modal">
