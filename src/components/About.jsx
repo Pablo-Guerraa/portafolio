@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// import resumeFile from "../documents/resume.pdf";
 import resumeFile from "../documents/resume.pdf";
 const AboutUs = ({age}) => {
 
