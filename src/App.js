@@ -28,7 +28,7 @@ function App() {
     let result = today.getFullYear() - birthday.getFullYear();
     const m = today.getMonth() - birthday.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
-      result--;
+      return setAge(result-1);
     }
     setAge(result)
   }
@@ -57,7 +57,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    calculateAge('1997')
+    calculateAge('1997-09-21')
   }, [])
 
   if (typeof window !== "undefined") {
