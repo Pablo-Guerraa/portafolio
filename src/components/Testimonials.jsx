@@ -7,7 +7,7 @@ const Testimonials = () => {
     {
       name: "Sheran",
       position: "English teacher of Albright Institute",
-      src: "images/testimonial/client-sm-3.jpg",
+      src: "images/testimonial/Teacher-english.jpg",
       desc: "Dedicated and diligent learner, Pablo has shown commendable progress in both vocabulary and grammar skills. The commitment to improvement is evident. Focus on refining pronunciation and structuring written work will further enhance overall communication. Keep up the impressive effort and dedication to continuous learning!",
       rating: 5,
     },

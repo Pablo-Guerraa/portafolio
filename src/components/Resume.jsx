@@ -56,6 +56,10 @@ const Resume = () => {
     {
       name: "Data base",
       percent: 65,
+    },
+    {
+      name: "WordPress",
+      percent: 80,
     }
   ];
 
