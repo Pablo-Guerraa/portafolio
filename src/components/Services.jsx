@@ -6,17 +6,17 @@ const Services = () => {
     {
       name: "Front end Web developer",
       desc: "Focused on delivering visual and technical solutions that enhance the usability and appearance of web projects.",
-      icon: "fas fa-pencil-ruler",
+      icon: "fa-brands fa-react",
     },
     {
       name: "Back end Web developer",
       desc: " Back-End Developer dedicated to crafting efficient and scalable solutions for web applications.",
-      icon: "fas fa-desktop",
+      icon: "fa-brands fa-node",
     },
     {
-      name: "Design thinking",
-      desc: "Dedicated to leveraging Design Thinking methodologies to solve complex problems and deliver impactful, human-centered designs for a meaningful user experience.",
-      icon: "fas fa-bullhorn",  
+      name: "WordPress",
+      desc: "Experienced WordPress developer proficient in building dynamic and customized websites using WordPress platform",
+      icon: "fa-brands fa-wordpress",  
     },
   ];
 
