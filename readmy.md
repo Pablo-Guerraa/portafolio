@@ -12,26 +12,26 @@ Thank you for taking the time to review my work, and I hope this documentation p
 
 The project is organized as follows:
 
-/   
-|-- public/ 
-| |-- index.html    
-|   
-|-- src/    
-| |-- components/   
-| | |-- About.js    
-| | |-- Contact.js
-| | |-- Project.js
-| | |-- ...
-| |
-| |-- data/
-| | |-- projects.js
-| |
-| |-- App.js
-| |-- index.js
-| |-- ...
-|
-|-- README.md
-|-- ...
+/\
+|-- public/\
+| |-- index.html\  
+|\
+|-- src/\
+| |-- components/\ 
+| | |-- About.js\
+| | |-- Contact.js\
+| | |-- Project.js\
+| | |-- ...\
+| |\
+| |-- data/\
+| | |-- projects.js\
+| |\
+| |-- App.js\
+| |-- index.js\
+| |-- ...\
+|\
+|-- README.md\
+|-- ...\
 
 
 ### Main Components
