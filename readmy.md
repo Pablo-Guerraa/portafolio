@@ -12,13 +12,13 @@ Thank you for taking the time to review my work, and I hope this documentation p
 
 The project is organized as follows:
 
-/
-|-- public/
-| |-- index.html
-|
-|-- src/
-| |-- components/
-| | |-- About.js
+/   
+|-- public/ 
+| |-- index.html    
+|   
+|-- src/    
+| |-- components/   
+| | |-- About.js    
 | | |-- Contact.js
 | | |-- Project.js
 | | |-- ...
